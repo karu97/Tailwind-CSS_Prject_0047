@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Tailwind</title>
+
+</head>
+<body>
+
+
+  <div class="p-10" >
+      <!-- -----------Nav bar--------- -->
+    <nav class="bg-transparent text-lg">
+      <div class="max-w-6xl border border-transparent">
+        <div class="flex justify-between">  
+          <div class="gap-5">
+            <img class=" max-w-[120px]" src="img/deski_05.svg" alt="">
+          </div>
+
+          <div class="hidden md:flex justify-center gap-6 py-2">
+            <div>
+              <div class="flex items-center text hover:text-red-900">
+                <a href="" class="mr-1">Home</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </div>                       
+            </div>
+            <div>
+              <div class="flex items-center text hover:text-red-900">
+                <a href="" class="mr-1">Portfolio</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </div>                       
+            </div>
+            <div>
+              <div class="flex items-center text hover:text-red-900">
+                <a href="" class="mr-1">Pages</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </div>                       
+            </div>
+            <div>
+              <div class="flex items-center text hover:text-red-900">
+                <a href="" class="mr-1">Blogs</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </div>                       
+            </div>
+            <div>
+              <div class="flex items-center text hover:text-red-900">
+                <a href="" class="mr-1">Docs</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </div>                       
+            </div>
+          </div>
+          <div class="hidden md:flex justify-between gap-6">
+            <div class="font-semibold text hover:text-red-900 py-2">Login</div>
+            <div class="">
+              <button class="group relative h-12 w-48 overflow-hidden rounded-lg bg-purple-500 text-lg shadow">
+                <div class="absolute inset-0 w-0 bg-red-900 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+                <span class="relative text-white group-hover:text-white">Create your event</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile button goes here -->
+          <div class="md:hidden flex items-center ">
+            <button class="" id="mobile-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-red-950">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg></button>
+          </div>
+
+        </div>
+      </div>
+        <!-- Mobile menu goes here -->
+            <div id="mobile-menu" class="hidden">
+              <a href="" class="flex items-center py-2 px-4 text-sm hover:text-red-900">
+                <span>Home</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  class="w-4 h-4 text-black ml-auto">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </a>
+              <a href="" class="flex items-center py-2 px-4 text-sm hover:text-red-900">
+                <span>Portfolio</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  class="w-4 h-4 text-black ml-auto">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </a>
+
+              <a href="" class="flex items-center py-2 px-4 text-sm hover:text-red-900">
+                <span>Pages</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  class="w-4 h-4 text-black ml-auto">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </a>
+
+              <a href="" class="flex items-center py-2 px-4 text-sm hover:text-red-900">
+                <span>Blogs</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  class="w-4 h-4 text-black ml-auto">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </a>
+
+              <a href="" class="flex items-center py-2 px-4 text-sm hover:text-red-900">
+                <span>Docs</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  class="w-4 h-4 text-black ml-auto">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </a>
+            
+              <div class="flex justify-center gap-6">
+                <div class="text-lg font-semibold text hover:text-red-900 py-2">Login</div>
+                <div class="">
+                  <button class="group relative h-12 w-36 overflow-hidden rounded-lg bg-purple-500 text-sm shadow">
+                    <div class="absolute inset-0 w-0 bg-red-900 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+                    <span class="relative text-white group-hover:text-white">Create your event</span>
+                  </button>
+                </div>
+              </div> 
+              
+            </div>
+    </nav>
+      <!-- ---------End of Nav bar--------- -->
+
+
+        <div class="grid grid-rows-2 bg-transparent mr-40 ml-40">
+            <div class="text-slate-500 font-bold flex items-center justify-center">
+              CONTACT US
+            </div>
+            <div class="text-6xl text-center font-bold flex items-center justify-center">
+              Feel free to contact us or just say hi!
+            </div>
+          </div>
+          
+          <div class="grid sm:grid-cols-1 md:grid-cols-3 bg-transparent mt-16 gap-10">
+            <div class="p-4 flex flex-col items-center">
+                <img class="w-auto h-auto p-4" src="img/44.svg" alt="">
+                <h1 class="text-center mt-2 text-slate-500 underline decoration-yellow-400 decoration-4"> Location</h1>
+                <p class="text-center text-2xl">Dhaka, Kawran Bazar 1201 Metro</p>
+              </div>
+              
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-auto h-auto p-4" src="img/45.svg" alt="">
+                <h1 class="text-center mt-3 text-slate-500 underline decoration-yellow-400 decoration-4"> Contact</h1>
+                <p class="text-center text-2xl">bawejkor@duwvude.gov <br> (779) 564-1593</p>
+              </div>
+          
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-auto h-auto p-4" src="img/46.svg" alt="">
+                <h1 class="text-center mt-2 text-slate-500 underline decoration-yellow-400 decoration-4"> Social Media</h1>
+                <p class="text-center text-2xl">Find on social media</p>
+                <div class="flex justify-between gap-3 mt-3">
+                  <a href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook text-slate-400 hover:text-red-700" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg></a>
+                  <a href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter text-slate-400 hover:text-red-700" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                  </svg></a>
+                  <a href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest text-slate-400 hover:text-red-700" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
+                  </svg></a>
+                </div>
+              </div>
+          </div>  
+          
+          <!-- ------------------------------------ -->
+          
+          <form class="max-w-full mx-auto mt-20">
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label for="first_name" class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2">
+                  First Name
+                </label>
+                <div class="relative">
+                  <input type="text" name="first_name" id="first_name"
+                    class="block w-full text-sm py-2.5 px-4 leading-5 bg-transparent border-b-2 border-decoration-4 focus:outline-none focus:bg-transparent border-black"
+                    placeholder="John" required />
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 px-3">
+                <label for="last_name" class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2">
+                  Last Name
+                </label>
+                <div class="relative">
+                  <input type="text" name="last_name" id="last_name"
+                    class="block w-full text-sm py-2.5 px-4 leading-5 bg-transparent border-b-2 border-decoration-4 focus:outline-none focus:bg-transparent border-black"
+                    placeholder="Doe" required />
+                </div>
+              </div>
+            </div>
+            <div class="mb-6">
+              <label for="email" class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2">
+                Email Address
+              </label>
+              <div class="relative">
+                <input type="email" name="email" id="email"
+                  class="block w-full text-sm py-2.5 px-4 leading-5 bg-transparent border-b-2 border-decoration-4 focus:outline-none focus:bg-transparent border-black"
+                  placeholder="john.doe@example.com" required />
+              </div>
+            </div>
+            <div class="mb-6">
+              <label for="message" class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2">
+                Your Message
+              </label>
+              <div class="relative">
+                <textarea name="message" id="message" rows="4"
+                  class="block w-full text-sm py-2.5 px-4 leading-5 bg-transparent border-b-2 border-decoration-4 focus:outline-none focus:bg-transparent border-black"
+                  placeholder="Enter your message here" required></textarea>
+              </div>
+            </div>
+            <button class="bg-red-500 border border-red-200 hover:bg-white text-white hover:text-red-500 text-sm font-semibold py-2 px-9 rounded-lg duration-500">
+              Send Message
+            </button>
+          </form>
+   </div>  
+         <!-- ----Footer section started---- -->
+
+         <div class="grid sm:grid-cols-2 bg-pink-100 gap-4 p-10 md:grid-cols-4">
+          <div class="p-3">
+            <img class=" max-w-[120px]" src="img/deski_05.svg" alt="">
+            <div class="mt-6">
+              <a href="">deskiinc@gmail.com</a>
+            </div>
+            <div class="mt-2">
+              <a href="" class="">+761 412 3224</a>
+            </div>
+          </div>
+        
+          <div class="p-4 ml-10">
+            <h1 class="text-xl">Links</h1> 
+            <div class="mt-6">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Home</a>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Home</a>
+            </div>       
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Product</a>
+            </div>     
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Pricing</a>
+            </div>     
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">About us</a>
+            </div>     
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Help & support</a>
+            </div>     
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">API documentation</a>
+            </div>     
+          </div>
+        
+          <div class="p-4 ml-10">
+            <h1 class="text-xl">Legal</h1> 
+            <div class="mt-6">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Terms of use</a>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Terms & conditions</a>
+            </div>       
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Privacy policy</a>
+            </div>     
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Cookie policy</a>
+            </div>          
+          </div>
+        
+          <div class="p-4 ml-10">
+            <h1 class="text-xl">Products</h1> 
+            <div class="mt-6">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Take the tour</a>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Live chat</a>
+            </div>       
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Self-service</a>
+            </div>     
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Social</a>
+            </div>       
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Mobile</a>
+            </div>  
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Deski Reviews</a>
+            </div>     
+          </div>
+        </div>
+        
+        <!-- -----End of footer section------ -->
+                       
+
+          
+        <script>
+          const mobileMenuButton = document.getElementById('mobile-menu-button');
+          const mobileMenu = document.getElementById('mobile-menu');
+          mobileMenuButton.addEventListener('click', function () {
+            mobileMenu.classList.toggle('hidden');
+          });
+        </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Tailwind</title>
+
+</head>
+<body>
+
+
+  <div class="p-10" >
+      <!-- -----------Nav bar--------- -->
+    <nav class="bg-transparent text-lg">
+      <div class="max-w-6xl border border-transparent">
+        <div class="flex justify-between">  
+          <div class="gap-5">
+            <img class=" max-w-[120px]" src="img/deski_05.svg" alt="">
+          </div>
+
+          <div class="hidden md:flex justify-center gap-6 py-2">
+            <div>
+              <div class="flex items-center text hover:text-red-900">
+                <a href="" class="mr-1">Home</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </div>                       
+            </div>
+            <div>
+              <div class="flex items-center text hover:text-red-900">
+                <a href="" class="mr-1">Portfolio</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </div>                       
+            </div>
+            <div>
+              <div class="flex items-center text hover:text-red-900">
+                <a href="" class="mr-1">Pages</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </div>                       
+            </div>
+            <div>
+              <div class="flex items-center text hover:text-red-900">
+                <a href="" class="mr-1">Blogs</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </div>                       
+            </div>
+            <div>
+              <div class="flex items-center text hover:text-red-900">
+                <a href="" class="mr-1">Docs</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </div>                       
+            </div>
+          </div>
+          <div class="hidden md:flex justify-between gap-6">
+            <div class="font-semibold text hover:text-red-900 py-2">Login</div>
+            <div class="">
+              <button class="group relative h-12 w-48 overflow-hidden rounded-lg bg-purple-500 text-lg shadow">
+                <div class="absolute inset-0 w-0 bg-red-900 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+                <span class="relative text-white group-hover:text-white">Create your event</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile button goes here -->
+          <div class="md:hidden flex items-center ">
+            <button class="" id="mobile-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-red-950">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg></button>
+          </div>
+
+        </div>
+      </div>
+        <!-- Mobile menu goes here -->
+            <div id="mobile-menu" class="hidden">
+              <a href="" class="flex items-center py-2 px-4 text-sm hover:text-red-900">
+                <span>Home</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  class="w-4 h-4 text-black ml-auto">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </a>
+              <a href="" class="flex items-center py-2 px-4 text-sm hover:text-red-900">
+                <span>Portfolio</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  class="w-4 h-4 text-black ml-auto">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </a>
+
+              <a href="" class="flex items-center py-2 px-4 text-sm hover:text-red-900">
+                <span>Pages</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  class="w-4 h-4 text-black ml-auto">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </a>
+
+              <a href="" class="flex items-center py-2 px-4 text-sm hover:text-red-900">
+                <span>Blogs</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  class="w-4 h-4 text-black ml-auto">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </a>
+
+              <a href="" class="flex items-center py-2 px-4 text-sm hover:text-red-900">
+                <span>Docs</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  class="w-4 h-4 text-black ml-auto">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </a>
+            
+              <div class="flex justify-center gap-6">
+                <div class="text-lg font-semibold text hover:text-red-900 py-2">Login</div>
+                <div class="">
+                  <button class="group relative h-12 w-36 overflow-hidden rounded-lg bg-purple-500 text-sm shadow">
+                    <div class="absolute inset-0 w-0 bg-red-900 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+                    <span class="relative text-white group-hover:text-white">Create your event</span>
+                  </button>
+                </div>
+              </div> 
+              
+            </div>
+    </nav>
+      <!-- ---------End of Nav bar--------- -->
+
+      <!-- -------------Hero Banner Started--------- -->
+      <div class="grid sm:grid-cols-1 gap-3 py-20 md:grid-cols-2">
+        <div class="bg-transparent p-4 text-7xl">
+          Event ticket organiser & seller.
+          <div class="text-2xl text-slate-500 py-7">
+            <h2>For hassale free event, we are here to help you by creating online ticket.</h2>
+          </div>
+          <div class="py-0">
+            <button class="group relative h-12 w-48 overflow-hidden rounded-lg bg-purple-500 text-lg shadow">
+              <div class="absolute inset-0 w-0 bg-red-900 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+              <span class="relative text-white group-hover:text-white">Let’s get started</span>
+            </button>
+          </div>
+        </div>
+      
+        <div class="bg-transparent p-4">
+          <img class="max-w-[660px] md:max-w-full" src="img/ils_14.svg" alt="">
+          <div class="text-xl text-black py-7 flex justify-center">
+            <h2>Over <span class="text-2xl text-red-900 font-semibold underline">150,000 + client</span> all over the world.</h2>
+          </div>
+        </div>
+      </div>
+      <!-- -----------------End of the Hero Banner---------------- -->
+      
+      <div class="grid sm:grid-cols-1 bg-white md:grid-cols-3">
+        <div class="p-4 flex flex-col items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 mb-2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+          </svg>
+          <div class="text-center">
+            <h1 class="text-lg text-slate-500">Smart Popups</h1>
+            <p class="text-xl p-3">Create customized popups and show the message at <br> the lorem</p>
+          </div>
+        </div>
+        
+        <div class="p-4 flex flex-col items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 mb-2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+          </svg>
+          <div class="text-center">
+            <h1 class="text-lg text-slate-500">Smart Popups</h1>
+            <p class="text-xl p-3">Create customized popups and show the message at <br> the lorem</p>
+          </div>
+        </div>
+      
+        <div class="p-4 flex flex-col items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 mb-2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+          </svg>
+          <div class="text-center">
+            <h1 class="text-lg text-slate-500">Smart Popups</h1>
+            <p class="text-xl p-3">Create customized popups and show the message at <br> the lorem</p>
+          </div>
+        </div>
+        </div>
+
+        <!-- ------------------ -->
+
+        <div class="grid sm:grid-cols-1 gap-3 py-20 md:grid-cols-2">
+          <div class="bg-transparent p-4">
+            <img class="max-w-[660px] md:max-w-full" src="img/img_57.png" alt="">
+          </div>
+        
+          <div class="bg-transparent p-4 text-xl text-slate-500 py-20">
+            <h1>Over <span class="text-black underline">150,000+ client</span></h1>
+            <div class="text-5xl text-black py-7 font-medium">
+              <h2>Best event & online ticket platform.</h2>
+            </div>
+            <div>
+              <p class="font-medium">Things go wrong. You’ll have questions. We understand. So we have people, not bots, on hand
+                to help.</p>
+            </div>
+            <div>
+              <p class="font-medium py-5">We aim to answer any query in less than 10 minutes.</p>
+            </div>
+            <div class="text-xl text-black py-2 font-semibold">
+              <h2>-Mitchell Garner</h2>
+            </div>
+        
+          </div>
+        </div>
+
+        <!-- ----------------------- -->
+
+        <div class="grid grid-rows-2 gap-3 bg-transparent">
+          <div class="text-slate-500 flex items-center justify-center">
+            GET STARTED IN MINUTES
+          </div>
+        
+          <div class="text-5xl font-semibold flex items-center justify-center">
+            <h1 class="text-center">3 simple & easy steps to launch.</h1>
+          </div>
+        </div>
+        
+        <div class="grid sm:grid-cols-1 bg-transparent mt-16 gap-10 md:grid-cols-3">
+          <div class="p-4 flex flex-col items-center">
+            <img class="max-h-full m-[0_auto]" src="img/ils_15.svg" alt="">
+            <div class="text-center mt-3">
+              <h1 class="text-lg text-slate-500">Join Our Platform</h1>
+              <p class="text-xl p-3">It only takes 5 minutes. Set up is smooth and simple fully lorem qui.</p>
+            </div>
+          </div>
+        
+          <div class="p-4 flex flex-col items-center">
+            <img class="max-h-full m-[0_auto]" src="img/ils_16.svg" alt="">
+            <div class="text-center">
+              <h1 class="text-lg text-slate-500">Manage you event</h1>
+              <p class="text-xl p-3">Choose a price package to suit you or pay per ticket. Sell on your website,</p>
+            </div>
+          </div>
+        
+          <div class="p-4 flex flex-col items-center">
+            <img class="max-h-full m-[0_auto]" src="img/ils_17.svg" alt="">
+            <div class="text-center mt-3">
+              <h1 class="text-lg text-slate-500">Start selling ticket</h1>
+              <p class="text-xl p-3">Get payments, detailed data on tickets sales & message guests lorem </p>
+            </div>
+          </div>
+        </div>
+ 
+         <!-- ----------------------------------  -->
+
+        <div class="grid sm:grid-cols-1 gap-3 py-20 md:grid-cols-2">
+          <div class="bg-transparent p-4 text-lg text-slate-500">
+            WHY CHOOSE US
+            <div class="text-5xl text-black py-7 font-medium">
+              <h2>Why you should choose us?</h2>
+            </div>
+            <div class="flex items-center">
+              <a href="" class="mr-8 text-2xl text-black">Register and create your first seller portal.</a>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-6 h-6 text-black">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+            </div>
+            <div class="text-lg mt-5 mr-10">
+              <p>It only takes 5 minutes. Set-up is smooth & simple, with fully customisable page design to reflect your brand
+                lorem dummy.</p>
+            </div>
+        
+            <div class="flex items-center mt-8">
+              <a href="" class="mr-8 text-2xl text-black">Register and create your first seller portal.</a>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-6 h-6 text-black">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+            </div>
+            <div class="text-lg mt-5 mr-10">
+              <p>It only takes 5 minutes. Set-up is smooth & simple, with fully customisable page design to reflect your brand
+                lorem dummy.</p>
+            </div>
+          </div>
+          <div class="bg-transparent p-4">
+            <img class="max-w-[660px] md:max-w-full" src="img/img_58.png" alt="">
+          </div>
+        </div>
+  </div>      
+
+        <!-- -------------------------------------------- -->
+
+        <!-- ----Footer section started---- -->
+
+        <div class="grid sm:grid-cols-2 bg-pink-100 gap-4 p-10 md:grid-cols-4">
+          <div class="p-3">
+            <img class=" max-w-[120px]" src="img/deski_05.svg" alt="">
+            <div class="mt-6">
+              <a href="">deskiinc@gmail.com</a>
+            </div>
+            <div class="mt-2">
+              <a href="" class="">+761 412 3224</a>
+            </div>
+          </div>
+        
+          <div class="p-4 ml-10">
+            <h1 class="text-xl">Links</h1> 
+            <div class="mt-6">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Home</a>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Home</a>
+            </div>       
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Product</a>
+            </div>     
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Pricing</a>
+            </div>     
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">About us</a>
+            </div>     
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Help & support</a>
+            </div>     
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">API documentation</a>
+            </div>     
+          </div>
+        
+          <div class="p-4 ml-10">
+            <h1 class="text-xl">Legal</h1> 
+            <div class="mt-6">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Terms of use</a>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Terms & conditions</a>
+            </div>       
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Privacy policy</a>
+            </div>     
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Cookie policy</a>
+            </div>          
+          </div>
+        
+          <div class="p-4 ml-10">
+            <h1 class="text-xl">Products</h1> 
+            <div class="mt-6">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Take the tour</a>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Live chat</a>
+            </div>       
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Self-service</a>
+            </div>     
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Social</a>
+            </div>       
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Mobile</a>
+            </div>  
+            <div class="mt-2">
+              <a href="#" class="font-medium text-slate-500 hover:underline">Deski Reviews</a>
+            </div>     
+          </div>
+        </div>
+        
+        <!-- -----End of footer section------ -->
+
+        <script>
+          const mobileMenuButton = document.getElementById('mobile-menu-button');
+          const mobileMenu = document.getElementById('mobile-menu');
+          mobileMenuButton.addEventListener('click', function () {
+            mobileMenu.classList.toggle('hidden');
+          });
+        </script>
+
+</body>
+</html>
